@@ -1,0 +1,114 @@
+:root {
+    --Darkcyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --VeryDarkBlue: hsl(212, 21%, 14%);
+    --DarkGrayishBlue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: var(--Cream);
+    
+}
+
+.subtitle{
+    color: var(--Darkcyan);
+    font-family: 'Montserrat', system-ui, sans-serif;
+    font-weight: 400;
+    letter-spacing: .2rem;
+}
+
+.title {
+    color: var(--VeryDarkBlue);
+    font-family: 'Fraunces', sans-serif;
+}
+
+
+
+.img-perfume {
+    background: url('./images/image-product-mobile.jpg') no-repeat center;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1rem 1rem 0 0;
+}
+
+p {
+    color: var(--DarkGrayishBlue);
+    font-family: 'Montserrat', system-ui, sans-serif;   
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+    border-radius: 1rem;
+}
+
+.container {
+    padding: 1rem;
+}
+
+button {
+    background-color: var(--Darkcyan);
+    padding: 1rem;
+    color: var(--White);
+    font-size: larger;
+    font-family: 'Montserrat', system-ui, sans-serif;
+    font-weight: bold;
+    width: 100%;
+}
+
+button:hover{
+    background-color: var(--VeryDarkBlue);
+    transition-duration: 300ms;
+}
+
+.icon-cart {
+
+    height: 20px;
+    width: 20px;
+    
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 1rem;    
+}
+
+.price {
+    color: var(--DarkGrayishBlue);
+    font-size: 2.5rem;
+}
+
+.last-price{
+    color: var(--Darkcyan);
+    text-decoration: line-through;
+}
+
+@media (min-width: 450px) {
+    
+    .card {
+        flex-direction: row;
+        max-width: 1000px;
+        margin: auto;
+        margin-top: 13%;
+    }
+
+    .img-perfume{
+        background: url('./images/image-product-desktop.jpg') no-repeat center;
+        border-radius: 1rem 0 0 1rem;
+        width: 100%;
+        height: auto;
+        block-size: auto;
+        object-position: center;
+    }
+}
